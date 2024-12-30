@@ -120,7 +120,27 @@ nav>ul {
 }
 
 .head-home {
-    margin: 0px;
+   height: 100vh;
+    width: 100%;
+   background-image: url("/assets/image/home-3.png");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   animation: myani 12s infinite;
+}
+@keyframes myani{
+    0% 
+    {
+        background-image: url(/assets/image/home-3.png);
+    }
+    50%
+    {
+        background-image: url(/assets/image/home-2.png);
+    }
+    100%
+    {
+        background-image: url(/assets/image/home-2.png);
+    }
 }
 .head-home>img{
     width: 100%;
@@ -647,7 +667,7 @@ footer {
     .head {
         display: flex;
         flex-direction: column;
-        margin-top: -50px;
+        margin-top: -70px;
     }
 
     .head>.head_logo {
@@ -681,7 +701,8 @@ footer {
     }
 
     .head-home {
-      margin-top: 50px;  
+       height: 20vh;
+      margin-top: 70px;  
     }
 
     .service {
@@ -969,7 +990,7 @@ footer {
     .head {
         display: flex;
         flex-direction: column;
-        margin-top: 100px;
+        margin-top: -50px;
     }
 
     .head>.head_logo {
@@ -1003,7 +1024,8 @@ footer {
     }
 
     .head-home {
-        margin-top: -100px;
+        height: 40vh;
+        margin-top: 70px;
     }
 
     .service {
@@ -1029,7 +1051,7 @@ footer {
     }
 
     .about {
-        margin-top: -150px;
+        margin-top: -30px;
     }
 
     .about-head {
