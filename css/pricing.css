@@ -1,0 +1,743 @@
+@font-face {
+    font-family: Qardoos;
+    src: url(../assets/font/Qardoos.otf);
+}
+@font-face {
+    font-family: NeosonicPersonalUse;
+    src: url(../assets/font/NeosonicPersonalUse.otf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f3f3f3;
+    font-family: Qardoos;
+    width: 100%;
+}
+
+.head>.head_logo {
+    display: flex;
+    align-items: center;
+}
+
+.head>.head_logo>img {
+    height: 55px;
+}
+
+.head>.head_logo>h1 {
+    color: rgb(20, 117, 134);
+    font-size: 1.7rem;
+    padding-left: 10px;
+    animation: tracking-in-expand 1s cubic-bezier(.215, .61, .355, 1.000) both;
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: .5em;
+        opacity: 0
+    }
+
+    40% {
+        opacity: .6
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.head>.head_logo>h1>span {
+    color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav>ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    padding: 25px;
+    color: rgb(13, 13, 13);
+    font-family: Qardoos;
+}
+
+.nav-link:hover {
+    color: rgb(46, 152, 152);
+}
+
+.btn>.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(106, 188, 206);
+    color: black;
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    transition: 0.4s;
+    border-radius: 10px;
+    font-family: Qardoos;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.btn>.box>img {
+    height: 18px;
+    padding-right: 5px;
+}
+
+.btn>.box:hover {
+    background-color: rgb(13, 140, 182);
+}
+
+.menu-line {
+    display: block;
+    height: 3px;
+    width: 20px;
+    background-color: rgb(20, 117, 134);
+    margin-bottom: 3px;
+}
+
+.menu {
+    cursor: pointer;
+    display: none;
+}
+.head-home>h1 {
+    font-family: NeosonicPersonalUse;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: #b1aeae;
+  }
+.head-home{
+  height: 80px;
+  width: 100%;
+  background-image: url("/assets/image/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+.price {
+    margin-top: 40px;
+}
+
+.price-head {
+    font-family: Qardoos;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+
+.price-body{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   place-items: center;
+   margin-top: 50px;
+}
+
+.plan {
+    border-radius: 16px;
+    box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205);
+    padding: 10px;
+    background-color: #fff;
+    color: #697e91;
+    max-width: 300px;
+  }
+  
+  .plan strong {
+   
+    font-weight: 600;
+    color: #425275;
+  }
+  
+  .plan .inner {
+    align-items: center;
+    padding: 20px;
+    padding-top: 40px;
+    background-color: #ecf0ff;
+    border-radius: 12px;
+    position: relative;
+  }
+  
+  .plan .pricing {
+    font-family: "Urbanist", sans-serif;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    border-radius: 99em 0 0 99em;
+    display: flex;
+    align-items: center;
+    padding: 0.625em 0.75em;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #707a91;
+  }
+  
+  .plan .pricing small {
+    font-family: "Urbanist", sans-serif;
+    color: #707a91;
+    font-size: 0.75em;
+    margin-left: 0.25em;
+  }
+  
+  .plan .title {
+    font-family: Qardoos;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #425675;
+  }
+  
+  .plan .title + * {
+    margin-top: 0.75rem;
+  }
+  
+  .plan .info + * {
+    margin-top: 1rem;
+  }
+  
+  .plan .features {
+    font-family: "Urbanist", sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .plan .features li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .plan .features li + * {
+    margin-top: 0.65rem;
+  }
+  
+  .plan .features .icon {
+    background-color: #1FCAC5;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  .plan .features .icon-basic1 {
+    background-color: #111111;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  .plan .features .icon-basic2 {
+    background-color: #111111;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  .plan .features .icon-basic3 {
+    background-color: #1FCAC5;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  .plan .features .icon-medium1 {
+    background-color: #1FCAC5;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  .plan .features .icon-medium2 {
+    background-color: #111111;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  .plan .features .icon-medium3 {
+    background-color: #1FCAC5;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+
+  .plan .pricing-advance {
+    font-family: "Urbanist", sans-serif;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color:  rgb(106, 188, 206);
+    border-radius: 99em 0 0 99em;
+    display: flex;
+    align-items: center;
+    padding: 0.625em 0.75em;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: black;
+  }
+  
+  .plan .pricing small {
+    font-family: "Urbanist", sans-serif;
+    color: #707a91;
+    font-size: 0.75em;
+    margin-left: 0.25em;
+  }
+  
+  .plan .features .icon svg {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .plan .features + * {
+    margin-top: 1.25rem;
+  }
+  
+  .plan .action {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  
+  .plan .button {
+    background-color: black;
+    border-radius: 6px;
+    color: #fff;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    padding: 0.625em 0.75em;
+    text-decoration: none;
+  }
+
+  .plan .button:hover {
+    background-color: rgb(106, 188, 206);
+    color:black;
+  }
+  .plan .button-advance {
+    background-color: rgb(106, 188, 206);
+    color:black;
+    border-radius: 6px;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    padding: 0.625em 0.75em;
+    text-decoration: none;
+  }
+
+  .plan .button-advance:hover {
+    background-color: black;
+    color: #fff;
+  }
+
+  .popup{
+    font-family: "Urbanist", sans-serif;
+    width: 400px;
+    background-color: rgb(248, 248, 250);
+    border-radius: 6px;
+    position: absolute;
+    top:0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color:#333;
+    visibility: hidden;
+    transition: transform .5s,top .5s;
+  }
+  .open-popup
+   {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+  }
+
+  .popup > img{
+    height: 90px;
+    margin-top: -45px;
+  }
+  .popup > h1{
+    margin-top: 10px;
+  }
+  .popup > p{
+    margin-top: 5px;
+  }
+  .popup > button{
+    margin-top: 40px;
+    border: 0;
+    outline: none;
+    width: 100%;
+    padding: 10px 0px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0.1px 0 rgba(0, 0, 0, 0.2);
+    font-size: 0.9rem;
+    background-color: rgb(20, 215, 137);
+    color:white;
+  }
+
+footer {
+    margin-top: 50px;
+    background-color: rgb(106, 188, 206);
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    font-family: Qardoos;
+}
+
+.container>.footer-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+
+}
+
+.container>.footer-cont>h1 {
+    font-size: 2rem;
+}
+
+.container>.footer-cont>p {
+    font-family: "Urbanist", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.container>.footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.container>.footer-links>a {
+    text-decoration: none;
+    color: black;
+    margin-top: 20px;
+}
+
+.container>.footer-links>a:hover {
+    text-decoration: underline;
+    color: rgb(115, 44, 44);
+}
+
+.container>.footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -50px;
+}
+
+.container>.footer-social>.social-link {
+    margin-top: 10px;
+}
+
+.container>.footer-social>.social-link>a>img {
+    height: 25px
+}
+
+.footer-rights {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #151515;
+    font-family: "Urbanist", sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .head {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .head>.head_logo {
+        display: flex;
+        align-items: center;
+        margin-left: -130px;
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav>ul {
+        flex-direction: column;
+        text-align: center;
+        line-height: 30px;
+        display: none;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 28px;
+    }
+    .head-home {
+        height: 80px;
+    }
+    .head-home >h1{
+        margin-top: -10px;
+        font-size: 0.9rem;
+    }
+    .price-head {
+        font-size: 1.3rem;
+    }
+
+    .price-body{
+        display: grid;
+       grid-template-columns: repeat(1,1fr);
+    }
+    .popup{
+        width: 300px;
+        position:absolute;
+        top:110%;
+        left: 50%; 
+      }
+    footer {
+        margin-top: 50px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container>.footer-cont {
+        padding-top: 50px;
+
+    }
+
+    .container>.footer-cont>h1 {
+        font-size: 2rem;
+    }
+
+    .container>.footer-cont>p {
+        padding-top: 10px;
+    }
+
+    .container>.footer-links {
+        padding-top: 50px;
+    }
+
+    .container>.footer-links>a {
+        margin-top: 20px;
+    }
+
+    .container>.footer-social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .container>.footer-social>.social-link {
+        margin-top: 10px;
+    }
+
+    .container>.footer-social>.social-link>a>img {
+        height: 25px
+    }
+    .footer-rights {
+        font-family: "Urbanist", sans-serif;
+        font-size: 0.9rem;
+       
+    }
+
+}
+
+
+
+@media only screen and (min-width:768px) and (max-width:992px) {
+
+    .head {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .head>.head_logo {
+        display: flex;
+        align-items: center;
+        margin-left: -450px;
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav>ul {
+        flex-direction: column;
+        text-align: center;
+        line-height: 30px;
+        display: none;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 28px;
+    }
+
+    .head-home {
+        height: 90px;
+      
+    }
+    .head-home>h1 {
+        margin-top: -15px;
+        font-size: 1.1rem;
+    }
+    
+    .price-head {
+        font-size: 1.7rem;
+    }
+    .price-body{
+        display: grid;
+       grid-template-columns: repeat(2,1fr);
+    }
+
+    .popup{
+        width: 400px;
+        position: absolute;
+        top:50%;
+        left: 50%; 
+      }
+
+    footer {
+        margin-top: 50px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+    }
+
+    .container>.footer-cont {
+        margin-top: 35px;
+    }
+
+    .container>.footer-cont>h1 {
+        font-size: 2.4rem;
+    }
+
+    .container>.footer-cont>p {
+        padding-top: 10px;
+        font-size: 1.1rem;
+    }
+
+    .container>.footer-links {
+        margin-top: -80px;
+        font-size: 1.2rem;
+    }
+
+    .container>.footer-links>a {
+        margin-top: 20px;
+    }
+
+    .container>.footer-social {
+        font-size: 1.2rem;
+        margin-top: -145px;
+    }
+
+    .container>.footer-social>.social-link {
+        margin-top: 10px;
+    }
+
+    .container>.footer-social>.social-link>a>img {
+        height: 25px
+    }
+
+    .footer-rights {
+        font-size: 1rem;
+    }
+
+
+}

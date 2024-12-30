@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech.co</title>
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <div class="head_logo">
+                <img src="./assets/image/chip.png">
+                <h1>Tech<span>&</span>co<span>..</span></h1>
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="./about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="./service.html" class="nav-link">Service</a>
+                    </li>
+                    <li class="nav-item"><a href="./gallary.html" class="nav-link">Gallary</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn">
+                <a class="box" href="./login.html"><img src="./assets/image/avatar.png">Login</a>
+            </div>
+
+            <div class="menu">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+        </div>
+
+        <div class="head-home">
+            <h1>Contact Page</h1>
+        </div>
+    </header>
+
+    <section class="faq" id="faq">
+        <div class="faq-head">
+            <h1>Faq</h1>
+        </div>
+
+        <div class="faq-body">
+            <div class="faq-img">
+                <img src="./assets/image/faq.gif">
+            </div>
+            <div class="faq-cont">
+                <h1>Frequently ask Quesition's</h1>
+                <div class="faq-que">
+                    <button class="faq-que1">Q1: What is this technology course about?</button>
+                    <p class="faq-ans1"><b>Answer:</b> Course covers [specific technology], providing a comprehensive
+                        understanding of its core principles, applications, and tools. You will learn [insert specific
+                        topics like software development, data analysis, networking, etc.].</p>
+                    <button class="faq-que2">Q2: Are there hands-on projects or practical sessions?</button>
+                    <p class="faq-ans2"><b>Answer:</b> Yes, the course includes [hands-on projects, labs, or practical exercises] to
+                        help you apply the knowledge gained in real-world scenarios.</p>
+                    <button class="faq-que3">Q3: Are there any prerequisites for the course?</button>
+                    <p class="faq-ans3"><b>Answer:</b> [No prior knowledge is required/basic understanding of XYZ is needed]. Some
+                        courses may require you to be familiar with [specific technology].</p>
+                    <button class="faq-que4">Q4: Will I receive a certificate after completing the course?</button>
+                    <p class="faq-ans4"><b>Answer:</b> Yes, upon successful completion of the course and all its requirements, you
+                        will receive a [certificate of completion/certification in XYZ].</p>
+                    <button class="faq-que5">Q5: How do I enroll in the course?</button>
+                    <p class="faq-ans5"><b>Answer:</b> To enroll, visit [course website], click "Enroll Now," and follow the
+                        instructions. Payment can be made through [methods].</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <div class="cont-head">
+            <h1>Contact Us</h1>
+        </div>
+
+        <div class="cont-body">
+            <div class="cont-cont">
+                <input type="text" name="text" placeholder="FirstName" class="name" id="input-name" onkeyup="contactName()"><br> 
+                <span class="name-error" id="name-error"></span>
+               
+                 <input type="mail" name="mail" placeholder="E-Mail" class="mail" id="input-mail" onkeyup="contactMail()"><br> 
+                  <span class="email-error" id="email-error"></span>
+
+                <textarea name="message" placeholder="Message" class="message"  id="input-msg" onkeyup="contactMsg()" rows="8" cols="5"></textarea><br>
+                <span class="msg-error" id="msg-error"></span>
+
+                <div class="send-btn">
+                    <button onclick="msgSend()">Send</button>
+                </div>
+            </div>
+            <div class="cont-img">
+                <img src="./assets/image/cont-img.jpg">
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-cont">
+                <h1>About Us</h1>
+                <p>Welcome to <b>Tech</b>&<b>Co</b>, where technology meets innovation! Our mission is to provide
+                    cutting-edge tech education that empowers learners of all levels to develop the skills they need to
+                    succeed in the digital world. Whether you're just starting or advancing your expertise, we offer
+                    courses designed to meet your needs.</p>
+            </div>
+            <div class="footer-links">
+                <h1>Links</h1>
+                <a href="./service.html">service</a>
+                <a href="./gallary.html">gallary</a>
+                <a href="./contact.html">faq</a>
+                <a href="./contact.html">contact</a>
+            </div>
+            <div class="footer-social">
+                <h1>Social Media</h1>
+                <div class="social-link">
+                    <a href="#"><img src="./assets/image/instagram.png"></a>
+                    <a href="#"><img src="./assets/image/facebook.png"></a>
+                    <a href="#"><img src="./assets/image/twitter.png"></a>
+                    <a href="#"><img src="./assets/image/youtupe.png"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-rights">
+            © 2024 Copyright<img src="./assets/image/like.png" width="20px" alt="...">MrDevaWebsite
+        </div>
+    </footer>
+
+    <script src="./jquery2.js"></script>
+    <script src="./javascript/index.js"></script>
+
+</body>
+</html>
